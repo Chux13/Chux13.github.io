@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="stylecontact.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CymCanu</title>
+</head>
+<body>
+    <div id="grid-container">
+        <header>
+            <h1 id="logo"><img src="CymCanu_Logo.png" alt="CymCanu Logo"></h1>
+        </header>
+        <div id="menu">
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="dropdown">
+                <button class="dropbtn">Songs</button>
+                <div class="dropdown-content">
+                  <a href="#">Caru Canu - Aderyn Melyn</a>
+                  <a href="#">James James - Hen Wlad fy Nhadau</a>
+                  <a href="#">Eden - Paid â Bod Ofn</a>
+                  <a href="#">Caru Canu - Roedd Franz o Wlad Awstria</a>
+                  <a href="#">Mynyddog and Talog Williams - Sosban Fach</a>
+                  <a href="#">Sŵnami - Trwmgwsg</a>
+                </div>
+            </div>
+        </div>
+        <section id="main_content">
+            <h1 id="title">Request a Song to be Added to the Database</h1>
+            <br>
+            <p>Complete this form to get your song added to our database!</p>
+            <p>Please format the lyrics in the same way as they are on our database to allow for quicker introduction onto the database.</p>
+            <p>If no lyrics are submited, it may take longer for the song to be uploaded onto the database.</p>
+            <p>We aim to have a song uploaded within a week of submission. However, this may take longer if elements of the form are missing.</p>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+            <form action="" method="">
+                <label for="artist_name">Artist Name:</label>
+                <input type="text" name="artist_name" id="artist_name" required>
+                <br>
+                <br>
+                <label for="song_name">Song Name:</label>
+                <input type="text" name="song_name" id="song_name" required>
+                <br>
+                <br>
+                <label for="welsh_lyrics">Welsh lyrics:</label>
+                <textarea name="welsh_lyrics" id="welsh_lyrics" required cols="30" rows="3"></textarea>
+                <br>
+                <br>
+                <label for="english_lyrics">English lyrics:</label>
+                <textarea name="english_lyrics" id="english_lyrics" required cols="30" rows="3"></textarea>
+                <br>
+                <br>
+                <input type="submit" value="Send!">
+                <br>
+                <br>
+            </form>
+        <footer>
+            &copy; CymCanu 2024
+        </footer>
+    </div>
+</body>
+</html>
