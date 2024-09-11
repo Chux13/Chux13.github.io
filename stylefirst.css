@@ -1,0 +1,152 @@
+body {
+    margin: 0px;
+} 
+
+h1 img {
+    width: 11.5vw;
+  }
+
+header {
+    background-color: red;
+    color: white;
+    text-align: center;
+    grid-area: header;
+}
+
+#logo {
+    padding: 0px;
+    margin: 0vh 0vw;
+    height: 24vh;
+    justify-content: center;
+}
+
+#menu {
+    background-color: red;
+    color: white;
+    grid-area: menu;
+}
+
+#menu nav ul {
+    display: flex;
+    gap: 0.5vw;
+    list-style: none;
+    text-decoration: none;
+    justify-content: center;
+    margin: 0vw 0vh;
+}
+
+#menu nav ul > li {
+    margin: 0.8vw 1.5vh;
+}
+
+#menu nav ul > li > a {
+    color: white;
+    text-decoration: none;
+    padding: 0.8vw;
+    border: 0.01vw solid white;
+    border-radius: 10%;
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding: 1vh 1vw;
+}
+
+/* Dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 5vw;
+    box-shadow: 1vw 3vh 3vw black;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 2vh 2vw;
+    width: 23vw;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: yellow;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: white;
+}
+
+#options_title {
+    text-align: center;
+}
+
+#options {
+    padding: 20px;
+    background-color: yellow;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-align: center;
+    grid-area: options;
+}
+
+#options nav {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    text-decoration: none;
+}
+
+#subtitle {
+    color: red;
+}
+
+#subtitle1 {
+    color: red;
+}
+
+#welsh_lyrics {
+    grid-area: welsh_lyrics;
+    text-align: center;
+    width: 50vw;
+}
+
+#english_lyrics {
+    grid-area: english_lyrics;
+    text-align: center;
+    width: 42.5vw;
+}
+
+#video {
+    padding: 5vh 5vw;
+    grid-area: video;
+    text-align: center;
+}
+
+footer {
+    padding: 2vh 2vw;
+    background-color: green;
+    color: white;
+    font-weight: bold; 
+    text-align: center;
+    grid-area: footer;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "menu menu"
+    "welsh_lyrics english_lyrics"
+    "video video"
+    "footer footer"
+    ;
+    grid-template-columns:  1fr 5fr;
+}
